@@ -24,7 +24,6 @@ function bindData(articles) {
         if (!article.urlToImage) {
             return;
         }
-        //shows only those articles having a urlToImage attribute
         const cardClone= newsCardTemplate.content.cloneNode(true);
         fillDataInCard(cardClone, article);
         cardsContainer.appendChild(cardClone);
